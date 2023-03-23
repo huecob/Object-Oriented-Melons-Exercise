@@ -67,9 +67,9 @@ class GovernmentMelonOrder(AbstractMelonOrder):
     tax = 0
     passed_inspection = False
 
-    def marked_inspection(passed):
+    def marked_inspection(self, passed):
         if passed == True:
-            passed_inspection = True
+            self.passed_inspection = True
 
 order0 = GovernmentMelonOrder("Watermelon", 10)
 order1 = InternationalMelonOrder("Watermelon",10,"AUS")
